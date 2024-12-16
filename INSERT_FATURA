@@ -1,0 +1,82 @@
+-- CAMPOS OBRIGATÓRIOS DO INSERT DA FATURA
+
+/* Data for the 'tab_titulo_receber' table  (Records 1 - 1) */
+
+INSERT INTO tab_titulo_receber (
+    "seq_titulo", 
+    "cod_empresa", 
+    "num_titulo", 
+    "num_doc_auxiliar", 
+    "cod_pessoa_sacado", 
+    "dta_emissao", 
+    "dta_vencimento", 
+    "cod_tipo_cobranca", 
+    "val_original", 
+    "val_juros_original", 
+    "des_observacao", 
+    "ind_tipo_titulo", 
+    "ind_status", 
+    "val_juros", 
+    "val_multa", 
+    "val_desconto", 
+    "val_taxa_cobranca", 
+    "val_despesa_acessoria", 
+    "dta_liquidacao", 
+    "val_liquidado", 
+    "val_recebimento_banco", 
+    "val_recebimento_caixa", 
+    "val_recebimento_cheque", 
+    "ind_boleta_impressa", 
+    "ind_fatura", 
+    "num_placa", 
+    "nom_usuario_alteracao", 
+    "cod_remessa", 
+    "num_titulo_cnab", 
+    "val_recebimento_cf", 
+    "ind_carta_frete_manual", 
+    "val_recebimento_cartao", 
+    "val_total_negociado", 
+    "val_outros_acrescimos", 
+    "ind_estagio_aprovacao", 
+    "seq_lr_juros_cheque", 
+    "qtd_parcelas"
+
+) VALUES (
+    nextval('gen_titulo_receber'), -- seq_titulo
+    102, -- cod_empresa
+    E'raphael', -- num_titulo
+    E'', -- num_doc_auxiliar
+    43308, -- cod_pessoa_sacado
+    E'2024-12-16 00:00:00', -- dta_emissao
+    E'2024-12-16 00:00:00', -- dta_vencimento
+    21, -- cod_tipo_cobranca
+    1, -- val_original
+    0, -- val_juros_original
+    E'teste', -- des_observacao
+    E'CF', -- ind_tipo_titulo
+    E'A', -- ind_status
+    0, -- val_juros
+    0, -- val_multa
+    0, -- val_desconto
+    '0', -- val_taxa_cobranca
+    0, -- val_despesa_acessoria
+    NULL, -- dta_liquidacao
+    0, -- val_liquidado
+    0, -- val_recebimento_banco
+    0, -- val_recebimento_caixa
+    0, -- val_recebimento_cheque
+    E'N', -- ind_boleta_impressa
+    E'S', -- ind_fatura
+    E'', -- num_placa
+    E'RDDFCONSULTORIA', -- nom_usuario_alteracao
+    0, -- cod_remessa
+    E'', -- num_titulo_cnab
+    0, -- val_recebimento_cf
+    E'N', -- ind_carta_frete_manual
+    0, -- val_recebimento_cartao
+    0, -- val_total_negociado
+    0, -- val_outros_acrescimos
+    0, -- ind_estagio_aprovacao
+    0, -- seq_lr_juros_cheque
+    0
+);
